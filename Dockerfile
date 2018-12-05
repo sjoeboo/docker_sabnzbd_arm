@@ -13,5 +13,5 @@ VOLUME /config
 
 EXPOSE 8080
 
-RUN [ "cross-build-stop" ]
+RUN [ "cross-build-end" ]
 CMD ./SABnzbd.py -f /config/sabnzbd.ini -s 0.0.0.0:8080 -b 0
