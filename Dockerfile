@@ -8,6 +8,8 @@ RUN apt-get update && apt-get install git gcc libffi-dev libssl-dev python-pip p
 
 RUN pip install cheetah --upgrade && pip install setuptools --upgrade && pip install cryptography --upgrade && pip install pyopenssl --upgrade
 
+RUN pip install sabyenc --upgrade
+
 RUN git clone https://github.com/sabnzbd/sabnzbd.git && cd sabnzbd
 
 VOLUME /data
